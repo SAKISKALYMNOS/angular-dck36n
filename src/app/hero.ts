@@ -8,7 +8,7 @@ export class Hero {
     public katonomasia: string,
     public mnhmh_leksewn: string,
     public mnhmh_arithmwn: string,
-    public mnhmh_arithmwn2: string,
+    public mnhmharithmwn: string,
     public click_A: string,
     public afairesh7: string,
     public epanalabe: string,
