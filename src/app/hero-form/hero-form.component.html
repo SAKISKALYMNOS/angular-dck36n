@@ -1,0 +1,276 @@
+<div class="container">
+  <div [hidden]="submitted">
+    <h1>ΓΝΩΣΤΙΚΗ ΕΚΤΙΜΗΣΗ ΜΟΝΤΡΕΑΛ MONTREAL COGNITIVE ASSESSMENT (MoCA)</h1>
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+      <div class="form-group">
+        <label for="optikoxwrikes">optikoxwrikes</label>
+        <input type="text" class="form-control" id="optikoxwrikes"
+               required
+               [(ngModel)]="model.optikoxwrikes" name="optikoxwrikes"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="kybos">kybos</label>
+        <input type="text" class="form-control" id="kybos"
+               [(ngModel)]="model.kybos" name="kybos">
+      </div>
+
+      <div class="form-group">
+        <label for="power">clock</label>
+        <select class="form-control" id="clock"
+                required
+                [(ngModel)]="model.clock" name="clock"
+                #power="ngModel">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+        <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+          Power is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="katonomasia">katonomasia</label>
+        <input type="text" class="form-control" id="katonomasia"
+               required
+               [(ngModel)]="model.katonomasia" name="katonomasia"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="mnhmh_leksewn">mnhmh_leksewn</label>
+        <input type="text" class="form-control" id="mnhmh_leksewn"
+               [(ngModel)]="model.mnhmh_leksewn" name="mnhmh_leksewn">
+      </div>
+
+      <div class="form-group">
+        <label for="mnhmh_arithmwn">clock</label>
+        <select class="form-control" id="mnhmh_arithmwn"
+                required
+                [(ngModel)]="model.mnhmh_arithmwn" name="mnhmh_arithmwn"
+                #power="ngModel">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+        <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+          Power is required
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="mnhmh_arithmwn2">mnhmh_arithmwn2</label>
+        <input type="text" class="form-control" id="mnhmh_arithmwn2"
+               required
+               [(ngModel)]="model.mnhmh_arithmwn2" name="mnhmh_arithmwn2"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="click_A">click_A</label>
+        <input type="text" class="form-control" id="click_A"
+               [(ngModel)]="model.click_A" name="click_A">
+      </div>
+
+      <div class="form-group">
+        <label for="afairesh7">clock</label>
+        <select class="form-control" id="afairesh7"
+                required
+                [(ngModel)]="model.afairesh7" name="afairesh7"
+                #power="ngModel">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+        <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+          Power is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="epanalabe">epanalabe</label>
+        <input type="text" class="form-control" id="epanalabe"
+               required
+               [(ngModel)]="model.epanalabe" name="epanalabe"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="epanalabe1">epanalabe1</label>
+        <input type="text" class="form-control" id="epanalabe1"
+               [(ngModel)]="model.epanalabe1" name="epanalabe1">
+      </div>
+
+      <div class="form-group">
+        <label for="leksois_X">leksois_X</label>
+        <select class="form-control" id="leksois_X"
+                required
+                [(ngModel)]="model.leksois_X" name="leksois_X"
+                #power="ngModel">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+        <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+          Power is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="omoiothta">omoiothta</label>
+        <input type="text" class="form-control" id="omoiothta"
+               required
+               [(ngModel)]="model.omoiothta" name="omoiothta"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="anaklhsh_mnhmh_leksewn">anaklhsh_mnhmh_leksewn</label>
+        <input type="text" class="form-control" id="anaklhsh_mnhmh_leksewn"
+               [(ngModel)]="model.anaklhsh_mnhmh_leksewn" name="anaklhsh_mnhmh_leksewn">
+      </div>
+
+      <div class="form-group">
+        <label for="prosanatolismos">clock</label>
+        <select class="form-control" id="prosanatolismos"
+                required
+                [(ngModel)]="model.prosanatolismos" name="prosanatolismos"
+                #power="ngModel">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+        <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+          Power is required
+        </div>
+      </div>
+
+
+      <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+      <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>
+      <i>with</i> reset
+
+      &nbsp;&nbsp;
+      <button type="button" class="btn btn-default" (click)="newHero()">New Hero</button>
+      <i>without</i> reset
+
+     <!-- NOT SHOWN IN DOCS -->
+      <div>
+        <hr>
+        Name via form.controls = {{showFormControls(heroForm)}}
+      </div>
+     <!-- - -->
+    </form>
+  </div>
+
+  <div [hidden]="!submitted">
+    <h2>You submitted the following:</h2>
+    <div class="row">
+      <div class="col-xs-3">optikoxwrikes</div>
+      <div class="col-xs-9">{{ model.optikoxwrikes }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">kybos</div>
+      <div class="col-xs-9">{{ model.kybos }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">clock</div>
+      <div class="col-xs-9">{{ model.clock }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">katonomasia</div>
+      <div class="col-xs-9">{{ model.katonomasia }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">mnhmh_leksewn</div>
+      <div class="col-xs-9">{{ model.mnhmh_leksewn }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">mnhmh_arithmwn</div>
+      <div class="col-xs-9">{{ model.mnhmh_arithmwn }}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3">mnhmh_arithmwn2</div>
+      <div class="col-xs-9">{{ model.mnhmh_arithmwn2 }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">click_A</div>
+      <div class="col-xs-9">{{ model.click_A }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">afairesh7</div>
+      <div class="col-xs-9">{{ model.afairesh7 }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">epanalabe</div>
+      <div class="col-xs-9">{{ model.epanalabe }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">epanalabe1</div>
+      <div class="col-xs-9">{{ model.epanalabe1 }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">leksois_X</div>
+      <div class="col-xs-9">{{ model.leksois_X }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">omoiothta</div>
+      <div class="col-xs-9">{{ model.omoiothta }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">anaklhsh_mnhmh_leksewn</div>
+      <div class="col-xs-9">{{ model.anaklhsh_mnhmh_leksewn }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">prosanatolismos</div>
+      <div class="col-xs-9">{{ model.prosanatolismos }}</div>
+    </div>
+
+
+
+
+    <br>
+    <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
+  </div>
+</div>
+
+<!-- ====================================================  -->
+  <div>
+    <form>
+
+       <!-- ... all of the form ... -->
+
+    </form>
+  </div>
+
+<!-- ====================================================  -->
+<hr>
+<style>
+  .no-style .ng-valid {
+  border-left: 1px  solid #CCC
+}
+
+  .no-style .ng-invalid {
+  border-left: 1px  solid #CCC
+}
+</style>
+
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
