@@ -7,6 +7,7 @@ export class Hero {
     public clock: string,    
     public katonomasia: string,
     public mnhmh_leksewn: string,
+    public mnhmh_leksewn2: string,
     public mnhmh_arithmwn: string,
     public mnhmharithmwn: string,
     public click_A: string,

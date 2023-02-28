@@ -12,7 +12,7 @@ export class HeroFormComponent {
   powers = ['Really Smart', 'Super Flexible',
             'Super Hot', 'Weather Changer'];
 
-  model = new Hero(18, 'Dr. IQ', this.powers[0], 'Chuck Overstreet','Dr. IQ', this.powers[1], 'Chuck Overstreet','Dr. IQ', this.powers[1], 'Chuck Overstreet','Dr. IQ', this.powers[1], 'Chuck Overstreet','Dr. IQ', this.powers[1], 'Chuck Overstreet');
+  model = new Hero(18, '1-A','Κυβος','Ρολόι', 'Δωσε τα ονοματα των ζωων','Λεκτρική Μνήμη','Λεκτρική Μνήμη', 'Chuck Overstreet','Το υποκείµενο θα επαναλάβει µε την ανάποδη σειρά τα εξής:','Ποσα Α', 'Chuck Overstreet','Φραση 1', 'Φραση 2', 'Λεξεις απο Χ','Ομοιοτητα', 'Ανακληση Λεκτρική Μνήμη', 'Ημερομηνια - Μηνας - Ετος - Ημέρα - Τόπος - Πόλη');
 
   submitted = false;
 
@@ -20,21 +20,11 @@ export class HeroFormComponent {
 
   
   newHero() {
-    this.model = new Hero(1, '', '','','','','','','','','','','','','','');
+    this.model = new Hero(1, '', '','','','','','','','','','','','','','','');
   }
 
   skyDog(): Hero {
-    const myHero =  new Hero(1., 'SkyDog',
-                           'Fetch any object at any distance',
-                           'Leslie Rollover', 'SkyDog',
-                           'Fetch any object at any distance',
-                           'Leslie Rollover', 'SkyDog',
-                           'Fetch any object at any distance',
-                           'Leslie Rollover', 'SkyDog',
-                           'Fetch any object at any distance',
-                           'Leslie Rollover', 'SkyDog',
-                           'Fetch any object at any distance',
-                           'Leslie Rollover');
+    const myHero =  new Hero(1.,'1-A','Κυβος','Ρολόι', 'Δωσε τα ονοματα των ζωων','Λεκτρική Μνήμη','Λεκτρική Μνήμη', 'Chuck Overstreet','Το υποκείµενο θα επαναλάβει µε την ανάποδη σειρά τα εξής:','Ποσα Α', 'Chuck Overstreet','Φραση 1', 'Φραση 2', 'Λεξεις απο Χ','Ομοιοτητα', 'Ανακληση Λεκτρική Μνήμη', 'Ημερομηνια - Μηνας - Ετος - Ημέρα - Τόπος - Πόλη');
     console.log('My hero is called ' + myHero.optikoxwrikes); // "My hero is called SkyDog"
     return myHero;
   }
